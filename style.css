@@ -1,0 +1,41 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ .form {
+     width: 600px;
+     margin: 20px auto;
+ }
+ 
+ .form .is-student {
+     margin: 0 30px;
+ }
+ 
+ .form .is-student label {
+     margin-left: 100px;
+ }
+ 
+ input[type='radio'] {
+     display: none;
+ }
+ 
+ .radio {
+     margin-bottom: -4px;
+     display: inline-block;
+     width: 18px;
+     height: 18px;
+     background: #fff;
+     border-radius: 50%;
+     border: 1px solid #CDCDCD;
+     box-shadow: inset 0px 1px 2px #ddd;
+     line-height: 20px;
+ }
+ 
+ input[type='radio']:checked ~ .radio {
+     background: #fff;
+     box-shadow: none;
+     border: 6px solid #2787F0;
+     box-shadow: inset 0px 1px 2px #ddd;
+ }

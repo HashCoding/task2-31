@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>任务三十一：表单（三）联动</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="form">
+        <div class="is-student">
+            <label>
+                <input type="radio" name="student" value="Y">
+                <span class="radio"></span>
+                在校生
+            </label>
+            <label>
+                <input type="radio" name="student" value="N">
+                <span class="radio"></span>
+                非在校生
+            </label>
+        </div>
+        <div class="location">
+            <label>
+                学校
+                <span class="location-city">
+                    <option value=""></option>
+                </span>
+                <span class="location-school"></span>
+            </label>
+            <ul class="city-list">
+                <li>黑龙江</li>
+            </ul>
+            <ul class="school-list">
+                <li>哈尔滨工业大学</li>
+            </ul>
+        </div>
+        <div class="company">
+            <label>
+                就业单位
+                <span class="company-input">
+                    <input type="text">
+                </span>
+            </label>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
