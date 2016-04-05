@@ -11,7 +11,7 @@
     <div class="form">
         <div class="is-student">
             <label>
-                <input type="radio" name="student" value="Y">
+                <input type="radio" name="student" value="Y" checked>
                 <span class="radio"></span>
                 在校生
             </label>
@@ -23,20 +23,26 @@
         </div>
         <div class="location">
             <label>
-                学校
+                学&nbsp;&nbsp;校
                 <span class="location-city">
-                    <option value=""></option>
+                    <input type="text" name="location-city" placeholder="请选择省份">
                 </span>
-                <span class="location-school"></span>
+                <span class="location-school">
+                    <input type="text" name="location-school" placeholder="请选择学校">
+                </span>
             </label>
-            <ul class="city-list">
-                <li>黑龙江</li>
+            <!-- start 候选-->
+            <ul class="city-list"  style="display: none">
             </ul>
-            <ul class="school-list">
+            <ul class="school-list"  style="display: none">
+                <li>哈尔滨工业大学</li>
+                <li>哈尔滨工业大学</li>
+                <li>哈尔滨工业大学</li>
                 <li>哈尔滨工业大学</li>
             </ul>
+            <!-- end 候选-->
         </div>
-        <div class="company">
+        <div class="company"  style="display: none">
             <label>
                 就业单位
                 <span class="company-input">

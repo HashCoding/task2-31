@@ -2,6 +2,7 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+     list-style: none;
  }
  
  .form {
@@ -10,7 +11,7 @@
  }
  
  .form .is-student {
-     margin: 0 30px;
+     margin: 50px 30px;
  }
  
  .form .is-student label {
@@ -38,4 +39,87 @@
      box-shadow: none;
      border: 6px solid #2787F0;
      box-shadow: inset 0px 1px 2px #ddd;
+ }
+ 
+ .location {
+     position: relative;
+ }
+ 
+ .location label {
+     position: relative;
+     font-weight: bold;
+     height: 100%;
+ }
+ 
+ .location input {
+     width: 160px;
+     margin: 0 30px;
+     border-radius: 4px;
+     height: 36px;
+     font-size: 14px;
+     color: #555;
+     background-color: #FFF;
+     border: 1px solid #ccc;
+     outline: none;
+     padding-left: 10px;
+ }
+ 
+ .location .location-city:before {
+     content: '▲';
+     top: -3px;
+ }
+ 
+ .location .location-city:after {
+     content: '▼';
+     top: 8px;
+ }
+ 
+ .location .location-city:before, .location .location-city:after {
+     position: absolute;
+     display: block;
+     font-size: 50%;
+     left: 240px;
+     color: #535353;
+ }
+ 
+ .location .city-list {
+     position: absolute;
+     left: 102px;
+     width: 160px;
+     border: 1px solid #2787F1;
+     box-shadow: 0px 0px 5px #2787F1;
+     border-radius: 5px;
+ }
+ .location li {
+     height: 30px;
+     line-height: 30px;
+     padding: 0 10px;
+     cursor: pointer;
+ }
+ .location li:hover {
+     background-color: #ccc;
+ }
+ .location .school-list {
+     position: absolute;
+     left: 332px;
+     width: 160px;
+     border: 1px solid #2787F1;
+     box-shadow: 0px 0px 5px #2787F1;
+     border-radius: 5px;
+ }
+ 
+ .company label {
+     font-weight: bold;
+ }
+ 
+ .company .company-input input {
+     width: 400px;
+     margin: 0 30px;
+     border-radius: 4px;
+     height: 36px;
+     font-size: 14px;
+     color: #555;
+     background-color: #FFF;
+     border: 1px solid #ccc;
+     outline: none;
  }
